@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Create account' if mode == 'register' else 'Log in' }} – CODEQUEST{% endblock %}
+{% block content %}
+<section class="auth-page">
+  <div class="auth-art"><div class="auth-orb">✦</div><div class="auth-art-copy"><div class="section-kicker">THE LOST KINGDOM</div><h2>Your adventure<br>is waiting.</h2><p>Every great developer starts with a first step.</p></div></div>
+  <div class="auth-panel">
+    <div class="section-kicker">{{ 'CREATE YOUR ACCOUNT' if mode == 'register' else 'WELCOME BACK, EXPLORER' }}</div>
+    <h1>{{ 'Begin your journey.' if mode == 'register' else 'Continue your journey.' }}</h1>
+    <p class="muted">{{ 'Create an account to save your progress.' if mode == 'register' else 'Log in to return to Codoria.' }}</p>
+    <form method="POST" class="form">
+      {% if mode == 'register' %}<label>Your name<input name="username" required maxlength="40" placeholder="e.g. Alex"></label>{% endif %}
+      <label>Email address<input type="email" name="email" required placeholder="you@example.com"></label>
+      <label>Password<input type="password" name="password" required minlength="8" placeholder="At least 8 characters"></label>
+      <button class="btn btn-gold full" type="submit">{{ 'Create account' if mode == 'register' else 'Log in' }} <span>→</span></button>
+    </form>
+    <p class="switch-auth">{% if mode == 'register' %}Already have an account? <a href="{{ url_for('login') }}">Log in</a>{% else %}New to Codoria? <a href="{{ url_for('register') }}">Create an account</a>{% endif %}</p>
+  </div>
+</section>
+{% endblock %}

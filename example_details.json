@@ -1,0 +1,3918 @@
+{
+  "1": [
+    {
+      "output": "Hello, Codoria!",
+      "line_by_line": [
+        {
+          "line": "print('Hello, Codoria!')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Start\nLearn Python\nFinish",
+      "line_by_line": [
+        {
+          "line": "print('Start')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "print('Learn Python')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "print('Finish')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "12\n75",
+      "line_by_line": [
+        {
+          "line": "print(7 + 5)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "print('7' + '5')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Welcome, Arin",
+      "line_by_line": [
+        {
+          "line": "hero = 'Arin'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print('Welcome,', hero)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (EOFError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "name = input('Your name: ')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(f'Welcome to Codoria, {name}!')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "output": "3.13.5",
+      "line_by_line": [
+        {
+          "line": "import sys",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(sys.version.split()[0])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import venv",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "venv.EnvBuilder(with_pip=True).create('.venv')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print('Environment created')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "False",
+      "line_by_line": [
+        {
+          "line": "from pathlib import Path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(Path('.venv').is_dir())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess, sys",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "subprocess.run([sys.executable, '-m', 'pip', '--version'], check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess, sys",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "result = subprocess.run([sys.executable, '-m', 'pip', 'freeze'], capture_output=True, text=True, check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(result.stdout)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "output": "12",
+      "line_by_line": [
+        {
+          "line": "coins = 12",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(coins)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "19.95",
+      "line_by_line": [
+        {
+          "line": "price = 19.95",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(price)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "BENGALURU",
+      "line_by_line": [
+        {
+          "line": "city = 'Bengaluru'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(city.upper())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "is_unlocked = level >= 3",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "print(is_unlocked)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "22",
+      "line_by_line": [
+        {
+          "line": "age_text = '21'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "age = int(age_text)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(age + 1)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "output": "12 32",
+      "line_by_line": [
+        {
+          "line": "print(8 + 4, 8 * 4)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "3.4\n3\n2",
+      "line_by_line": [
+        {
+          "line": "print(17 / 5)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "print(17 // 5)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "print(17 % 5)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "True",
+      "line_by_line": [
+        {
+          "line": "temperature = 32",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(temperature > 30)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "True",
+      "line_by_line": [
+        {
+          "line": "has_ticket = True",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "age = 20",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(has_ticket and age >= 18)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "75",
+      "line_by_line": [
+        {
+          "line": "balance = 100",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "balance -= 25",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(balance)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "output": "Key unlocked",
+      "line_by_line": [
+        {
+          "line": "coins = 15",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "if coins >= 10:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    print('Key unlocked')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Enjoy the walk",
+      "line_by_line": [
+        {
+          "line": "is_raining = False",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "if is_raining:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    print('Take an umbrella')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "else:",
+          "note": "Begins the alternative branch when the preceding condition does not match."
+        },
+        {
+          "line": "    print('Enjoy the walk')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "B",
+      "line_by_line": [
+        {
+          "line": "score = 82",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "if score >= 90:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    print('A')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "elif score >= 75:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    print('B')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "else:",
+          "note": "Begins the alternative branch when the preceding condition does not match."
+        },
+        {
+          "line": "    print('C')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Entry allowed",
+      "line_by_line": [
+        {
+          "line": "age = 22",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "has_id = True",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "if age >= 18 and has_id:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    print('Entry allowed')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Transfer allowed",
+      "line_by_line": [
+        {
+          "line": "balance = 500",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "account_active = True",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "if account_active:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    if balance >= 100:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        print('Transfer allowed')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "output": "1\n2\n3\n4\n5",
+      "line_by_line": [
+        {
+          "line": "for n in range(1, 6):",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "    print(n)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "read\ncode\ntest",
+      "line_by_line": [
+        {
+          "line": "tasks = ['read', 'code', 'test']",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "for task in tasks:",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "    print(task)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "35",
+      "line_by_line": [
+        {
+          "line": "prices = [10, 20, 5]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "total = 0",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "for price in prices:",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "    total += price",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(total)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Try again\nTry again\nTry again",
+      "line_by_line": [
+        {
+          "line": "attempts = 0",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "while attempts < 3:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    print('Try again')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "    attempts += 1",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "1\n3\n4\n5",
+      "line_by_line": [
+        {
+          "line": "for n in range(1, 8):",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "    if n == 2:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        continue",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    if n == 6:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        break",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    print(n)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "output": "hello",
+      "line_by_line": [
+        {
+          "line": "raw = '  hello  '",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(raw.strip())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "python\nPYTHON",
+      "line_by_line": [
+        {
+          "line": "language = 'PyThOn'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(language.lower())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "print(language.upper())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "I like Python",
+      "line_by_line": [
+        {
+          "line": "sentence = 'I like Java'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(sentence.replace('Java', 'Python'))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "red | green | blue",
+      "line_by_line": [
+        {
+          "line": "csv_line = 'red,green,blue'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "colors = csv_line.split(',')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(' | '.join(colors))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Mira scored 91%",
+      "line_by_line": [
+        {
+          "line": "name = 'Mira'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "score = 91",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(f'{name} scored {score}%')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "output": "blue",
+      "line_by_line": [
+        {
+          "line": "colors = ['red', 'blue', 'green']",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(colors[1])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "['read', 'plan', 'build']",
+      "line_by_line": [
+        {
+          "line": "tasks = ['read', 'plan']",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "tasks.append('build')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "print(tasks)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "A ['B', 'C']",
+      "line_by_line": [
+        {
+          "line": "queue = ['A', 'B', 'C']",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "next_user = queue.pop(0)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(next_user, queue)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "[91, 72, 65]",
+      "line_by_line": [
+        {
+          "line": "scores = [72, 91, 65]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "scores.sort(reverse=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(scores)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "[1, 4, 9, 16, 25]",
+      "line_by_line": [
+        {
+          "line": "squares = [n * n for n in range(1, 6)]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(squares)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "9": [
+    {
+      "output": "(255, 120, 40)",
+      "line_by_line": [
+        {
+          "line": "rgb = (255, 120, 40)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(rgb)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "tuple",
+      "line_by_line": [
+        {
+          "line": "only_item = ('key',)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(type(only_item).__name__)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Mira 24",
+      "line_by_line": [
+        {
+          "line": "user = ('Mira', 24)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "name, age = user",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(name, age)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "(2, 8)",
+      "line_by_line": [
+        {
+          "line": "def min_max(values):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    return min(values), max(values)",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(min_max([3, 8, 2]))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "gate",
+      "line_by_line": [
+        {
+          "line": "locations = {(12, 8): 'gate'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(locations[(12, 8)])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "10": [
+    {
+      "output": "{'Ben', 'Ava'}",
+      "line_by_line": [
+        {
+          "line": "names = ['Ava', 'Ben', 'Ava']",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(set(names))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "True",
+      "line_by_line": [
+        {
+          "line": "skills = {'Python', 'SQL'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "skills.add('Git')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "print('Git' in skills)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "{'Python', 'CSS', 'SQL', 'HTML'}",
+      "line_by_line": [
+        {
+          "line": "frontend = {'HTML', 'CSS'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "backend = {'Python', 'SQL'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(frontend | backend)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "{'Python'}",
+      "line_by_line": [
+        {
+          "line": "required = {'Python', 'SQL'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "known = {'Python', 'Git'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(required & known)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "{'B'}",
+      "line_by_line": [
+        {
+          "line": "all_users = {'A', 'B', 'C'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "active = {'A', 'C'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(all_users - active)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "11": [
+    {
+      "output": "Ava",
+      "line_by_line": [
+        {
+          "line": "profile = {'name': 'Ava', 'city': 'Mysuru'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(profile['name'])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "print(profile.get('phone', 'Not provided'))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "profile['city'] = 'Bengaluru'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "profile['level'] = 2",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(profile)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "for key, value in profile.items():",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "    print(key, value)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "{'red': 2, 'blue': 1}",
+      "line_by_line": [
+        {
+          "line": "words = ['red', 'blue', 'red']",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "counts = {}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "for word in words:",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "    counts[word] = counts.get(word, 0) + 1",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(counts)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "12": [
+    {
+      "output": "Welcome!",
+      "line_by_line": [
+        {
+          "line": "def greet():",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    print('Welcome!')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "greet()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "25",
+      "line_by_line": [
+        {
+          "line": "def square(number):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    return number * number",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(square(5))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Hello, Explorer",
+      "line_by_line": [
+        {
+          "line": "def greet(name='Explorer'):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    return f'Hello, {name}'",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(greet())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Ava Pune",
+      "line_by_line": [
+        {
+          "line": "def profile(name, city):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    print(name, city)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "profile(city='Pune', name='Ava')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "12",
+      "line_by_line": [
+        {
+          "line": "def total(*values):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    return sum(values)",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(total(2, 4, 6))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "13": [
+    {
+      "output": "12",
+      "line_by_line": [
+        {
+          "line": "triple = lambda n: n * 3",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(triple(4))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "['Al', 'Mira', 'Christopher']",
+      "line_by_line": [
+        {
+          "line": "names = ['Mira', 'Al', 'Christopher']",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(sorted(names, key=lambda name: len(name)))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "3\n2\n1",
+      "line_by_line": [
+        {
+          "line": "def countdown(n):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    if n == 0: return",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    print(n)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "    countdown(n - 1)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "countdown(3)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "10",
+      "line_by_line": [
+        {
+          "line": "def sum_to(n):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    if n <= 0: return 0",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    return n + sum_to(n - 1)",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(sum_to(4))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "55",
+      "line_by_line": [
+        {
+          "line": "from functools import lru_cache",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "@lru_cache(maxsize=None)",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def fib(n):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    if n < 2: return n",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    return fib(n-1) + fib(n-2)",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(fib(10))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "14": [
+    {
+      "output": "5",
+      "line_by_line": [
+        {
+          "line": "import math",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(math.ceil(4.2))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": ".csv",
+      "line_by_line": [
+        {
+          "line": "from pathlib import Path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(Path('report.csv').suffix)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "2026-11-24",
+      "line_by_line": [
+        {
+          "line": "import datetime as dt",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(dt.date.today())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "# helpers.py",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "def double(value):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    return value * 2",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "",
+          "note": "Blank line separates logical parts of the program."
+        },
+        {
+          "line": "# main.py",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "from helpers import double",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(double(8))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "def main():",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    print('Run the application')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "",
+          "note": "Blank line separates logical parts of the program."
+        },
+        {
+          "line": "if __name__ == '__main__':",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    main()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    }
+  ],
+  "15": [
+    {
+      "output": "Please enter a whole number",
+      "line_by_line": [
+        {
+          "line": "try:",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    number = int('abc')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "except ValueError:",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    print('Please enter a whole number')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "5.0",
+      "line_by_line": [
+        {
+          "line": "try:",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    result = 10 / 2",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "except ZeroDivisionError:",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    print('Cannot divide by zero')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "else:",
+          "note": "Begins the alternative branch when the preceding condition does not match."
+        },
+        {
+          "line": "    print(result)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "file = None",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "try:",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    file = open('notes.txt', encoding='utf-8')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "finally:",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    if file is not None: file.close()",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        }
+      ]
+    },
+    {
+      "output": "20",
+      "line_by_line": [
+        {
+          "line": "def set_age(age):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    if age < 0:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        raise ValueError('age cannot be negative')",
+          "note": "Raises an exception to signal that the operation cannot continue normally."
+        },
+        {
+          "line": "    return age",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(set_age(20))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "class InsufficientFundsError(Exception):",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    pass",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "",
+          "note": "Blank line separates logical parts of the program."
+        },
+        {
+          "line": "def withdraw(balance, amount):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    if amount > balance: raise InsufficientFundsError()",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    return balance - amount",
+          "note": "Sends a result back to the caller and exits this function."
+        }
+      ]
+    }
+  ],
+  "16": [
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "with open('hello.txt', 'w', encoding='utf-8') as file:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    file.write('Hello, file!')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "with open('log.txt', 'a', encoding='utf-8') as file:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    file.write('Started\\n')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "with open('hello.txt', encoding='utf-8') as file:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    content = file.read()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(content)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "with open('log.txt', encoding='utf-8') as file:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    for line in file:",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "        print(line.rstrip())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "from pathlib import Path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "path = Path('data') / 'summary.txt'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "path.parent.mkdir(exist_ok=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "path.write_text('Done', encoding='utf-8')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    }
+  ],
+  "17": [
+    {
+      "output": "Book",
+      "line_by_line": [
+        {
+          "line": "class Book:",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    pass",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "book = Book()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(type(book).__name__)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Mira",
+      "line_by_line": [
+        {
+          "line": "class Student:",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    def __init__(self, name):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "        self.name = name",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "student = Student('Mira')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(student.name)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "1",
+      "line_by_line": [
+        {
+          "line": "class Counter:",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    def __init__(self): self.value = 0",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    def increment(self): self.value += 1",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "c = Counter()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "c.increment()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "print(c.value)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "woof",
+      "line_by_line": [
+        {
+          "line": "class Animal:",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    def speak(self): return 'sound'",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "class Dog(Animal):",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    def speak(self): return 'woof'",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "print(Dog().speak())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "running",
+      "line_by_line": [
+        {
+          "line": "class Engine:",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    def start(self): return 'running'",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "class Car:",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    def __init__(self): self.engine = Engine()",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "car = Car()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(car.engine.start())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "18": [
+    {
+      "output": "1 [2, 3, 4] 5",
+      "line_by_line": [
+        {
+          "line": "first, *middle, last = [1, 2, 3, 4, 5]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(first, middle, last)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Point(x=2, y=3)",
+      "line_by_line": [
+        {
+          "line": "from dataclasses import dataclass",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "@dataclass",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "class Point:",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    x: float",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    y: float",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "print(Point(2, 3))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "25.0",
+      "line_by_line": [
+        {
+          "line": "def percentage(part: float, whole: float) -> float:",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    return part / whole * 100",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(percentage(1, 4))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "enter\nwork\nexit",
+      "line_by_line": [
+        {
+          "line": "from contextlib import contextmanager",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "@contextmanager",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def managed_message():",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    print('enter')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "    try: yield",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    finally: print('exit')",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "with managed_message(): print('work')",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        }
+      ]
+    },
+    {
+      "output": "3",
+      "line_by_line": [
+        {
+          "line": "command = ('move', 3)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "match command:",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    case ('move', steps): print(steps)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    case _: print('unknown')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    }
+  ],
+  "19": [
+    {
+      "output": "map\nkey",
+      "line_by_line": [
+        {
+          "line": "items = iter(['map', 'key'])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(next(items))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "print(next(items))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "[3, 2, 1]",
+      "line_by_line": [
+        {
+          "line": "def countdown(n):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    while n > 0:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        yield n",
+          "note": "Produces the next generator value and pauses this function until it is resumed."
+        },
+        {
+          "line": "        n -= 1",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(list(countdown(3)))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "0",
+      "line_by_line": [
+        {
+          "line": "squares = (n*n for n in range(5))",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(next(squares))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "def nonempty_lines(path):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    with open(path, encoding='utf-8') as file:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "        for line in file:",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "            if line.strip(): yield line.rstrip()",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        }
+      ]
+    },
+    {
+      "output": "[4, 16, 36]",
+      "line_by_line": [
+        {
+          "line": "numbers = range(1, 8)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "evens = (n for n in numbers if n % 2 == 0)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "squares = (n*n for n in evens)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(list(squares))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "20": [
+    {
+      "output": "Before\nHello",
+      "line_by_line": [
+        {
+          "line": "def loud(func):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    def wrapper():",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "        print('Before')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "        func()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    return wrapper",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "@loud",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def hello(): print('Hello')",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "hello()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "from functools import wraps",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "def trace(func):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    @wraps(func)",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "    def wrapper(*args, **kwargs):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "        return func(*args, **kwargs)",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "    return wrapper",
+          "note": "Sends a result back to the caller and exits this function."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "import time",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "def timed(func):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    def wrapper(*args, **kwargs):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "        start = time.perf_counter()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "        result = func(*args, **kwargs)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "        print(time.perf_counter() - start)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "        return result",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "    return wrapper",
+          "note": "Sends a result back to the caller and exits this function."
+        }
+      ]
+    },
+    {
+      "output": "ping\nping",
+      "line_by_line": [
+        {
+          "line": "def repeat(times):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    def decorate(func):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "        def wrapper():",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "            for _ in range(times): func()",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "        return wrapper",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "    return decorate",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "@repeat(2)",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def ping(): print('ping')",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "ping()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "144",
+      "line_by_line": [
+        {
+          "line": "from functools import lru_cache",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "@lru_cache(maxsize=128)",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def square(n): return n*n",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "print(square(12))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "21": [
+    {
+      "output": "['12', '7']",
+      "line_by_line": [
+        {
+          "line": "import re",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(re.findall(r'\\d+', 'A12 B7'))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "True",
+      "line_by_line": [
+        {
+          "line": "import re",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(bool(re.fullmatch(r'[A-Z]{2}\\d{4}', 'AB1234')))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "a site.com",
+      "line_by_line": [
+        {
+          "line": "import re",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "match = re.search(r'(\\w+)@(\\w+\\.\\w+)', 'a@site.com')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(match.group(1), match.group(2))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Call [PHONE] today",
+      "line_by_line": [
+        {
+          "line": "import re",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "text = 'Call 9876543210 today'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(re.sub(r'\\d{10}', '[PHONE]', text))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "['Error', 'error']",
+      "line_by_line": [
+        {
+          "line": "import re",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "pattern = re.compile(r'error', re.IGNORECASE)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(pattern.findall('Error: error found'))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "22": [
+    {
+      "output": "{\"id\": 7, \"active\": true}",
+      "line_by_line": [
+        {
+          "line": "import json",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "record = {'id': 7, 'active': True}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(json.dumps(record))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "92",
+      "line_by_line": [
+        {
+          "line": "import json",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "text = '{\"score\": 92}'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "record = json.loads(text)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(record['score'])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import csv",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "with open('people.csv', 'w', newline='', encoding='utf-8') as file:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    writer = csv.writer(file)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    writer.writerow(['name', 'age'])",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    writer.writerow(['Ava', 21])",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import csv",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "with open('people.csv', newline='', encoding='utf-8') as file:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    for row in csv.DictReader(file): print(row['name'])",
+          "note": "Starts a loop that processes each item from the iterable."
+        }
+      ]
+    },
+    {
+      "output": "10",
+      "line_by_line": [
+        {
+          "line": "import json",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "data = json.loads('{\"price\": 10}')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "if not isinstance(data.get('price'), (int, float)):",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    raise ValueError('price must be numeric')",
+          "note": "Raises an exception to signal that the operation cannot continue normally."
+        },
+        {
+          "line": "print(data['price'])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "23": [
+    {
+      "output": "Counter({'a': 3, 'n': 2, 'b': 1})",
+      "line_by_line": [
+        {
+          "line": "from collections import Counter",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(Counter('banana'))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "2026-11-25",
+      "line_by_line": [
+        {
+          "line": "from datetime import date, timedelta",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "tomorrow = date.today() + timedelta(days=1)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(tomorrow)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "from pathlib import Path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "print(Path.cwd())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "# Install first: python -m pip install requests",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "import requests",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "response = requests.get('https://example.com', timeout=10)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(response.status_code)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "25.1.1",
+      "line_by_line": [
+        {
+          "line": "from importlib.metadata import version",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "# Replace 'requests' with an installed distribution name",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "print(version('pip'))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "24": [
+    {
+      "output": "[2 4 6]",
+      "line_by_line": [
+        {
+          "line": "import numpy as np",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "a = np.array([2, 4, 6])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(a)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "[11.8 23.6 35.4]",
+      "line_by_line": [
+        {
+          "line": "import numpy as np",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "prices = np.array([10.0, 20.0, 30.0])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(prices * 1.18)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "(2, 2) 2",
+      "line_by_line": [
+        {
+          "line": "import numpy as np",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "matrix = np.array([[1, 2], [3, 4]])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(matrix.shape, matrix.ndim)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "[1 2 3]\n[[0 1 2]\n [3 4 5]]",
+      "line_by_line": [
+        {
+          "line": "import numpy as np",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "a = np.arange(6)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(a[1:4])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "print(a.reshape(2, 3))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "[[11 22]\n [13 24]]",
+      "line_by_line": [
+        {
+          "line": "import numpy as np",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "measurements = np.array([[1, 2], [3, 4]])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "offset = np.array([10, 20])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(measurements + offset)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "25": [
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import pandas as pd",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "df = pd.DataFrame({'name': ['Ava', 'Ben'], 'score': [88, 92]})",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(df)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "# df = pd.read_csv('sales.csv')",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "# print(df.head())",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "# df.info()",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "# print(df.describe())",
+          "note": "Comment for the reader; Python does not execute this line."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import pandas as pd",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "df = pd.DataFrame({'sales': [50, 120, 90]})",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(df.loc[df['sales'] >= 90])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import pandas as pd",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "df = pd.DataFrame({'age': [20, None, 30]})",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "df['age'] = df['age'].fillna(df['age'].median())",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(df)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import pandas as pd",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "df = pd.DataFrame({'team': ['A', 'A', 'B'], 'sales': [10, 20, 15]})",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(df.groupby('team')['sales'].sum())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "26": [
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import matplotlib.pyplot as plt",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "plt.plot([1, 2, 3], [4, 6, 5], marker='o')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "plt.xlabel('Day')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "plt.ylabel('Visitors')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "plt.show()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import matplotlib.pyplot as plt",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "plt.bar(['A', 'B', 'C'], [12, 8, 15])",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "plt.ylabel('Orders')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "plt.show()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import matplotlib.pyplot as plt",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "plt.hist([12, 14, 14, 16, 18, 18, 18], bins=4)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "plt.xlabel('Score')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "plt.show()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import seaborn as sns",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "import pandas as pd",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "df = pd.DataFrame({'hours': [1, 2, 3], 'score': [55, 68, 80]})",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "sns.scatterplot(data=df, x='hours', y='score')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import matplotlib.pyplot as plt",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "plt.plot([1, 2], [3, 5])",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "plt.savefig('trend.png', dpi=150, bbox_inches='tight')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "plt.close()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    }
+  ],
+  "27": [
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "import sqlite3",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "conn = sqlite3.connect(':memory:')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "conn.execute('CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "conn.close()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "import sqlite3",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "with sqlite3.connect(':memory:') as conn:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    conn.execute('CREATE TABLE item (name TEXT)')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    conn.execute('INSERT INTO item VALUES (?)', ('Map',))",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "[(70,), (90,)]",
+      "line_by_line": [
+        {
+          "line": "import sqlite3",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "with sqlite3.connect(':memory:') as conn:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    conn.execute('CREATE TABLE score (value INTEGER)')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    conn.executemany('INSERT INTO score VALUES (?)', [(70,), (90,)])",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    print(conn.execute('SELECT value FROM score').fetchall())",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "import sqlite3",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "with sqlite3.connect(':memory:') as conn:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    conn.execute('CREATE TABLE wallet (balance INTEGER)')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    conn.execute('INSERT INTO wallet VALUES (100)')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    conn.execute('UPDATE wallet SET balance = balance - ?', (20,))",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Ava",
+      "line_by_line": [
+        {
+          "line": "import sqlite3",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "conn = sqlite3.connect(':memory:')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "conn.row_factory = sqlite3.Row",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "conn.execute('CREATE TABLE person (name TEXT)')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "conn.execute('INSERT INTO person VALUES (?)', ('Ava',))",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "print(conn.execute('SELECT * FROM person').fetchone()['name'])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        },
+        {
+          "line": "conn.close()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    }
+  ],
+  "28": [
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "# Install requests first",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "import requests",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "r = requests.get('https://api.github.com', timeout=10)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(r.status_code)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "# response is a successful requests response",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "data = response.json()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(type(data).__name__)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import requests",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "r = requests.get('https://httpbin.org/get', params={'page': 2}, timeout=10)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(r.url)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import requests",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "payload = {'title': 'Learn Python'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "r = requests.post('https://httpbin.org/post', json=payload, timeout=10)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(r.status_code)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import requests",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "try:",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    r = requests.get('https://api.github.com', timeout=5)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    r.raise_for_status()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "except requests.RequestException as exc:",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "    print('Request failed:', exc)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "29": [
+    {
+      "output": "₹250",
+      "line_by_line": [
+        {
+          "line": "from bs4 import BeautifulSoup",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "html = '<p class=\"price\">₹250</p>'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "soup = BeautifulSoup(html, 'html.parser')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(soup.select_one('.price').get_text(strip=True))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "/about",
+      "line_by_line": [
+        {
+          "line": "from bs4 import BeautifulSoup",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "html = '<a href=\"/about\">About</a>'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "soup = BeautifulSoup(html, 'html.parser')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(soup.select_one('a')['href'])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import requests",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "r = requests.get('https://example.com', timeout=10)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "r.raise_for_status()",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "print(len(r.text))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "['A', 'B']",
+      "line_by_line": [
+        {
+          "line": "from bs4 import BeautifulSoup",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "html = '<li class=\"item\">A</li><li class=\"item\">B</li>'",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "soup = BeautifulSoup(html, 'html.parser')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print([x.get_text(strip=True) for x in soup.select('.item')])",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import csv",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "rows = [{'name': 'A', 'price': 10}, {'name': 'B', 'price': 12}]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "with open('items.csv', 'w', newline='', encoding='utf-8') as f:",
+          "note": "Enters a managed context and ensures its cleanup behavior when the block ends."
+        },
+        {
+          "line": "    writer = csv.DictWriter(f, fieldnames=['name', 'price'])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    writer.writeheader(); writer.writerows(rows)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    }
+  ],
+  "30": [
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "from pathlib import Path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "for file in Path('.').glob('*.py'):",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "    print(file.name)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (FileNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from pathlib import Path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "for file in Path('downloads').iterdir():",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "    if file.is_file(): print(file.suffix.lower(), file.name)",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "from pathlib import Path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "import shutil",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "src = Path('report.txt')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "if src.exists(): shutil.copy2(src, Path('backup_report.txt'))",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "result = subprocess.run(['python', '--version'], capture_output=True, text=True, check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(result.stdout or result.stderr)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "INFO:root:Daily report task started",
+      "line_by_line": [
+        {
+          "line": "import logging",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "logging.basicConfig(level=logging.INFO)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "logging.info('Daily report task started')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    }
+  ],
+  "31": [
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from flask import Flask",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "app = Flask(__name__)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "@app.get('/')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def home(): return 'Hello'",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "@app.get('/users/<int:user_id>')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def user_detail(user_id): return {'user_id': user_id}",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from flask import render_template",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "@app.get('/welcome')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def welcome(): return render_template('welcome.html', name='Mira')",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from flask import request",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "@app.post('/message')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def message():",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    text = request.form.get('message', '').strip()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    return {'length': len(text)}",
+          "note": "Sends a result back to the caller and exits this function."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from flask import jsonify",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "@app.get('/api/status')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def status(): return jsonify({'ok': True, 'version': 1})",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        }
+      ]
+    }
+  ],
+  "32": [
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "from django.core.management import call_command",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "call_command('startproject', 'config', '.')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "from django.core.management import call_command",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "call_command('startapp', 'courses')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from django.db import models",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "class Course(models.Model):",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    title = models.CharField(max_length=120)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from django.urls import path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "from . import views",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "urlpatterns = [path('', views.home, name='home')]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from django.shortcuts import render",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "def home(request):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    return render(request, 'courses/home.html', {'title': 'Python'})",
+          "note": "Sends a result back to the caller and exits this function."
+        }
+      ]
+    }
+  ],
+  "33": [
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "from fastapi import FastAPI",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "app = FastAPI()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "@app.get('/')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def root(): return {'message': 'Hello'}",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "@app.get('/items/{item_id}')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def read_item(item_id: int): return {'item_id': item_id}",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "from pydantic import BaseModel",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "class Item(BaseModel):",
+          "note": "Defines a class blueprint; the indented block describes its behavior and data."
+        },
+        {
+          "line": "    name: str",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    price: float",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "@app.post('/items')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def create_item(item: Item): return {'name': item.name, 'price': item.price}",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "subprocess.run(['uvicorn', 'main:app', '--reload'], check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    }
+  ],
+  "34": [
+    {
+      "output": "Check passed",
+      "line_by_line": [
+        {
+          "line": "assert 2 + 2 == 4",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "print('Check passed')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "def is_even(n): return n % 2 == 0",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "assert is_even(4)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "assert not is_even(5)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Expected error",
+      "line_by_line": [
+        {
+          "line": "def positive(n):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    if n <= 0: raise ValueError('must be positive')",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    return n",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "try: positive(0)",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "except ValueError: print('Expected error')",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "# Save as test_math.py",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "import pytest",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "@pytest.mark.parametrize('a,b,total', [(1, 2, 3), (5, 7, 12)])",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def test_add(a, b, total):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    assert a + b == total",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "ZeroDivisionError",
+      "line_by_line": [
+        {
+          "line": "def divide(a, b): return a / b",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "try: divide(10, 0)",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        },
+        {
+          "line": "except ZeroDivisionError as exc: print(type(exc).__name__)",
+          "note": "Defines an exception-handling branch for operations that may fail."
+        }
+      ]
+    }
+  ],
+  "35": [
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "subprocess.run(['git', 'init'], check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "subprocess.run(['git', 'status'], check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "subprocess.run(['git', 'add', 'app.py'], check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "subprocess.run(['git', 'commit', '-m', 'Add app entry point'], check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "subprocess.run(['git', 'switch', '-c', 'feature/course-progress'], check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": ".gitignore created",
+      "line_by_line": [
+        {
+          "line": "from pathlib import Path",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "Path('.gitignore').write_text('.venv/\\n__pycache__/\\n*.pyc\\n.env\\n*.db\\n', encoding='utf-8')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print('.gitignore created')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "36": [
+    {
+      "output": "6.0%",
+      "line_by_line": [
+        {
+          "line": "orders = 120",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "visitors = 2000",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "conversion = orders / visitors",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(f'{conversion:.1%}')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import pandas as pd",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "df = pd.DataFrame({'region': ['N', 'S', 'N'], 'sales': [10, 8, 12]})",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(df.groupby('region')['sales'].agg(['sum', 'mean']))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "monthly = pd.Series([10, 12, 15, 14])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "change = monthly.pct_change()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(change)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import pandas as pd",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "df = pd.DataFrame({'spend': [20, 80, 150]})",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "df['segment'] = pd.cut(df['spend'], bins=[0, 50, 100, 200], labels=['low', 'mid', 'high'])",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(df)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Based on only 8 observations; interpret cautiously.",
+      "line_by_line": [
+        {
+          "line": "sample_size = 8",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(f'Based on only {sample_size} observations; interpret cautiously.')",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "37": [
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "# X contains input columns; y contains the label",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "X = df[['temperature', 'pressure']]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "y = df['failure']",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "from sklearn.model_selection import train_test_split",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "from sklearn.dummy import DummyClassifier",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "model = DummyClassifier(strategy='most_frequent')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "model.fit(X_train, y_train)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (NameError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from sklearn.metrics import classification_report",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "predictions = model.predict(X_test)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(classification_report(y_test, predictions, zero_division=0))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "from sklearn.pipeline import make_pipeline",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "from sklearn.preprocessing import StandardScaler",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "from sklearn.linear_model import LogisticRegression",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "model = make_pipeline(StandardScaler(), LogisticRegression())",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "model.fit(X_train, y_train)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    }
+  ],
+  "38": [
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "import os",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "DEBUG = os.getenv('APP_DEBUG', 'false').lower() == 'true'",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "import logging",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "logger = logging.getLogger(__name__)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "logger.info('Job started')",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "def calculate_tax(amount: float, rate: float) -> float:",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    return amount * rate",
+          "note": "Sends a result back to the caller and exits this function."
+        }
+      ]
+    },
+    {
+      "output": "No output is printed by this snippet; it defines or prepares a reusable value. Call or inspect it to see a result.",
+      "line_by_line": [
+        {
+          "line": "import os",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "port_text = os.getenv('PORT', '8000')",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "port = int(port_text)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "if not 1 <= port <= 65535: raise ValueError('invalid port')",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "import subprocess, sys",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "subprocess.run([sys.executable, '-m', 'pytest', '-q'], check=True)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        }
+      ]
+    }
+  ],
+  "39": [
+    {
+      "output": "{1: 3, 2: 2, 3: 1}",
+      "line_by_line": [
+        {
+          "line": "values = [1, 2, 1, 3, 2, 1]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "counts = {}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "for value in values: counts[value] = counts.get(value, 0) + 1",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "print(counts)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "True",
+      "line_by_line": [
+        {
+          "line": "def is_palindrome(text):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    left, right = 0, len(text)-1",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    while left < right:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        if text[left] != text[right]: return False",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        left += 1; right -= 1",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    return True",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(is_palindrome('level'))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "2",
+      "line_by_line": [
+        {
+          "line": "def binary_search(items, target):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    low, high = 0, len(items)-1",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    while low <= high:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        mid = (low + high)//2",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "        if items[mid] == target: return mid",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        if items[mid] < target: low = mid+1",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        else: high = mid-1",
+          "note": "Begins the alternative branch when the preceding condition does not match."
+        },
+        {
+          "line": "    return -1",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(binary_search([1, 3, 5, 7], 5))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "True",
+      "line_by_line": [
+        {
+          "line": "def balanced(text):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    stack = []",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    pairs = {')': '(', ']': '[', '}': '{'}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    for char in text:",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "        if char in '([{': stack.append(char)",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        elif char in pairs:",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "            if not stack or stack.pop() != pairs[char]: return False",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    return not stack",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(balanced('{[]}'))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "True",
+      "line_by_line": [
+        {
+          "line": "def contains_duplicate(items):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    seen = set()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "    for item in items:",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "        if item in seen: return True",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "        seen.add(item)",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "    return False",
+          "note": "Sends a result back to the caller and exits this function."
+        },
+        {
+          "line": "print(contains_duplicate([1, 2, 3, 2]))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ],
+  "40": [
+    {
+      "output": "4.0",
+      "line_by_line": [
+        {
+          "line": "def calculate(a, operator, b):",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        },
+        {
+          "line": "    if operator == '+': return a + b",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    if operator == '-': return a - b",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    if operator == '*': return a * b",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    if operator == '/' and b != 0: return a / b",
+          "note": "Checks a condition; the indented block runs or repeats according to its truth value."
+        },
+        {
+          "line": "    raise ValueError('unsupported operation')",
+          "note": "Raises an exception to signal that the operation cannot continue normally."
+        },
+        {
+          "line": "print(calculate(8, '/', 2))",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Study loops False",
+      "line_by_line": [
+        {
+          "line": "tasks = []",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "tasks.append({'title': 'Study loops', 'done': False})",
+          "note": "Executes this operation as part of the example; follow the values from the previous lines."
+        },
+        {
+          "line": "for task in tasks: print(task['title'], task['done'])",
+          "note": "Starts a loop that processes each item from the iterable."
+        }
+      ]
+    },
+    {
+      "output": "{'food': 120, 'travel': 80}",
+      "line_by_line": [
+        {
+          "line": "expenses = [{'category': 'food', 'amount': 120}, {'category': 'travel', 'amount': 80}]",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "totals = {}",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "for item in expenses: totals[item['category']] = totals.get(item['category'], 0) + item['amount']",
+          "note": "Starts a loop that processes each item from the iterable."
+        },
+        {
+          "line": "print(totals)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    },
+    {
+      "output": "Requires its stated setup or surrounding project context (ModuleNotFoundError). See the explanation before running locally.",
+      "line_by_line": [
+        {
+          "line": "from flask import Flask, jsonify",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "app = Flask(__name__)",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "@app.get('/health')",
+          "note": "Applies a decorator to the function or class defined immediately below."
+        },
+        {
+          "line": "def health(): return jsonify({'status': 'ok'})",
+          "note": "Defines a reusable function; its indented body runs when the function is called."
+        }
+      ]
+    },
+    {
+      "output": "Requires the stated local package, executable, file, dataset or service. Run in a configured local Python environment; the code comments and explanation describe the expected behavior.",
+      "line_by_line": [
+        {
+          "line": "# After installing pandas",
+          "note": "Comment for the reader; Python does not execute this line."
+        },
+        {
+          "line": "import pandas as pd",
+          "note": "Imports a module or selected names so this code can use their functionality."
+        },
+        {
+          "line": "df = pd.DataFrame({'team': ['A', 'B', 'A'], 'points': [4, 7, 6]})",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "report = df.groupby('team')['points'].sum().reset_index()",
+          "note": "Assigns or updates a value. Trace the expression on the right and the name on the left."
+        },
+        {
+          "line": "print(report)",
+          "note": "Displays the supplied value so you can inspect the program result."
+        }
+      ]
+    }
+  ]
+}

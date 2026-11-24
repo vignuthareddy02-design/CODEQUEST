@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Daily Python Challenges – CODEQUEST{% endblock %}
+{% block head %}<script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>{% endblock %}
+{% block content %}
+<section class="python-course-page"><a class="back-link" href="{{ url_for('python_course') }}">← Python roadmap</a><div class="python-course-hero"><div><div class="section-kicker">DAILY TRAINING GROUNDS · {{ today }}</div><h1>Daily <em>Challenges</em></h1><p>One easy, one medium and one hard challenge. Read the problem, predict the result, write your solution and test it in the Python playground.</p></div><div class="course-crystal">⚡<small>3 challenges</small></div></div>
+<div class="daily-challenge-grid">{% for challenge in challenges %}<article class="daily-card"><div class="module-card-top"><span class="module-number">{{ loop.index }}</span><span class="module-status {{ 'status-done' if challenge.level=='Easy' else ('status-open' if challenge.level=='Medium' else 'status-locked') }}">{{ challenge.level|upper }}</span></div><h2>{{ challenge.title }}</h2><p>{{ challenge.description }}</p><p><b>Input:</b> {{ challenge.input }}</p><p><b>Expected output:</b> {{ challenge.output }}</p><p><b>Constraints:</b> {{ challenge.constraints }}</p><h3>Test cases</h3><ul>{% for test in challenge.tests %}<li>{{ test }}</li>{% endfor %}</ul><button class="copy-btn" onclick="toggleDaily(this,'hint')">Show hint</button><p class="daily-hint" hidden>{{ challenge.hint }}</p><button class="copy-btn" onclick="toggleDaily(this,'solution')">Reveal solution</button><pre class="code-sample daily-solution" hidden><code>{{ challenge.solution }}</code></pre><p>{{ challenge.explanation }}</p></article>{% endfor %}</div>
+<section class="lesson-block"><div class="section-kicker">YOUR PRACTICE PAD</div><h2>Write and run your solution</h2><p>Choose a challenge above, write your code here and run it. You can test with the sample input by adapting the code to the required function.</p><div class="playground"><div class="playground-top"><span>⌨ PYTHON PLAYGROUND</span><span id="dailyRuntimeStatus" class="runtime-status">Loading Python…</span></div><textarea id="dailyCode" spellcheck="false">def sum_even(values):
+    total = 0
+    for value in values:
+        if value % 2 == 0:
+            total += value
+    return total
+
+print(sum_even([1, 2, 3, 4, 6]))</textarea><div class="editor-actions"><button class="btn btn-small btn-gold" id="dailyRun">▶ Run code</button></div><pre id="dailyOutput" class="code-output">Your output will appear here.</pre></div></section></section>
+{% endblock %}
+{% block scripts %}<script>
+function toggleDaily(btn,kind){const card=btn.closest('.daily-card');const el=card.querySelector(kind==='hint'?'.daily-hint':'.daily-solution');el.hidden=!el.hidden;btn.textContent=(el.hidden?'Show ':'Hide ')+(kind==='hint'?'hint':'solution');}
+let dailyPy=null;const status=document.getElementById('dailyRuntimeStatus'),out=document.getElementById('dailyOutput');loadPyodide().then(p=>{dailyPy=p;status.textContent='Python ready'}).catch(e=>{status.textContent='Unavailable';out.textContent=e.message});
+document.getElementById('dailyRun').addEventListener('click',async()=>{if(!dailyPy){out.textContent='Python is not ready yet.';return;}try{let lines=[];dailyPy.setStdout({batched:s=>lines.push(s)});await dailyPy.runPythonAsync(document.getElementById('dailyCode').value);out.textContent=lines.join('')||'(No printed output)';}catch(e){out.textContent=String(e)}});
+</script>{% endblock %}

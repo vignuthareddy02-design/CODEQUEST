@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Create your hero – CODEQUEST{% endblock %}
+{% block content %}
+<section class="character-page">
+  <div class="section-kicker">CHAPTER 0 · YOUR ADVENTURE STARTS</div>
+  <div class="character-emblem">✦</div>
+  <h1>Who will you be, <em>explorer?</em></h1>
+  <p class="section-lead">The kingdom will remember the hero who restores its crystal. Choose the name that will appear in your story.</p>
+  <form method="POST" class="character-form"><label>YOUR HERO NAME<input name="hero_name" maxlength="24" required placeholder="Enter your hero name"></label><button class="btn btn-gold full">Enter Codoria →</button></form>
+  <div class="character-hint">You can change your adventure name later.</div>
+</section>
+{% endblock %}

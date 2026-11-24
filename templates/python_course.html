@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Python Kingdom Roadmap – CODEQUEST{% endblock %}
+{% block content %}
+<section class="python-course-page">
+  <a class="back-link" href="{{ url_for('adventure') }}">← Back to adventure map</a>
+  <div class="python-course-hero"><div><div class="section-kicker">THE COMPLETE PYTHON ADVENTURE</div><h1>Python <em>Kingdom</em></h1><p>40 modules. From your first print statement to professional Python projects. Learn, practise, pass your trials and unlock the next chapter.</p></div><div class="course-crystal">💎<small>{{ passed }} / 40 cleared</small></div></div>
+  <div class="course-progress-card"><div class="progress-label"><span>YOUR PYTHON MASTERY</span><b>{{ percent }}%</b></div><div class="progress-track"><span style="width:{{ percent }}%"></span></div><div class="course-progress-meta"><span>{{ lesson_count }} lessons · {{ quiz_count }} quizzes · {{ passed }} exams passed</span><span>{{ practice_count }} practice attempts · {{ project_count }} projects completed</span></div></div>
+  <div class="course-shortcuts"><a class="btn btn-gold" href="{{ url_for('python_module', module_id=1) }}">Start / Continue learning →</a><a class="btn btn-ghost" href="{{ url_for('python_revision') }}">📚 Revision centre</a><a class="btn btn-ghost" href="{{ url_for('python_daily') }}">⚡ Daily challenges</a><a class="btn btn-ghost" href="{{ url_for('python_projects') }}">🛠 Projects ({{ project_count }}/{{ project_total }})</a></div>
+  {% for region in regions %}
+  <section class="region-section"><div class="region-heading"><div><div class="section-kicker">CHAPTER {{ '%02d'|format(loop.index) }}</div><h2>{{ region.name }}</h2><p>{{ region.subtitle }}</p></div><span class="region-range">MODULES {{ region.range[0] }}–{{ region.range[1] }}</span></div>
+    <div class="module-grid">
+    {% for module in modules if module.id >= region.range[0] and module.id <= region.range[1] %}
+      <article class="module-card {{ 'module-locked' if not module.unlocked else ('module-passed' if module.exam_passed else '') }}">
+        <div class="module-card-top"><span class="module-number">{{ '%02d'|format(module.id) }}</span>{% if module.exam_passed %}<span class="module-status status-done">✓ MASTERED</span>{% elif module.unlocked %}<span class="module-status status-open">✦ AVAILABLE</span>{% else %}<span class="module-status status-locked">🔒 LOCKED</span>{% endif %}</div>
+        <h3>{{ module.title }}</h3><p>{{ module.intro }}</p>
+        <div class="module-checks"><span>{{ '✓' if module.lesson_complete else '○' }} Lesson</span><span>{{ '✓' if module.quiz_passed else '○' }} Quiz</span><span>{{ '✓' if module.exam_passed else '○' }} Exam</span></div>
+        {% if module.unlocked %}<a class="module-open" href="{{ url_for('python_module', module_id=module.id) }}">{{ 'Review module' if module.exam_passed else 'Enter module' }} →</a>{% else %}<div class="module-locked-note">Pass module {{ module.id - 1 }} exam (70%)</div>{% endif %}
+      </article>
+    {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</section>
+{% endblock %}

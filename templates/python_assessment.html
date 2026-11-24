@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ module.title }} · {{ kind|title }} – CODEQUEST{% endblock %}
+{% block content %}
+<section class="python-assessment-page" id="assessment" data-kind="{{ kind }}" data-module="{{ module.id }}">
+  <a class="back-link" href="{{ url_for('python_module', module_id=module.id) }}">← Back to lesson</a>
+  <div class="assessment-heading"><div><div class="section-kicker">PYTHON MODULE {{ '%02d'|format(module.id) }} / 40</div><h1>{{ 'Topic Quiz' if kind == 'quiz' else 'Module Examination' }}</h1><p>{{ module.title }} · {{ questions|length }} questions · {{ pass_mark }}% required to pass</p></div><div class="timer-card"><small>TIME LEFT</small><b id="assessmentTimer">{{ '%02d'|format(duration) }}:00</b></div></div>
+  <div class="assessment-progress"><span id="answeredCount">0</span> / {{ questions|length }} answered <span class="assessment-progress-track"><i id="assessmentProgressBar"></i></span></div>
+  <form id="assessmentForm"><div class="assessment-question-list">
+  {% for question in questions %}<article class="assessment-question" data-qid="{{ question.qid }}"><div class="question-meta"><span>QUESTION {{ loop.index }}</span><small>{{ question.type|replace('_',' ')|title }}</small></div><h3>{{ question.question }}</h3>{% if question.code %}<pre class="code-sample"><code>{{ question.code }}</code></pre>{% endif %}<div class="assessment-options">{% for option in question.options %}<label><input type="radio" name="q{{ question.qid }}" value="{{ loop.index0 }}"><span>{{ ['A','B','C','D','E'][loop.index0] }}. {{ option }}</span></label>{% endfor %}</div></article>{% endfor %}
+  </div><button class="btn btn-gold btn-big" type="submit" id="submitAssessment">Submit {{ kind|title }}</button></form>
+  <div id="assessmentResult" class="assessment-result" hidden></div>
+</section>
+{% endblock %}
+{% block scripts %}<script>const ASSESSMENT_KIND={{ kind|tojson }};const ASSESSMENT_MODULE={{ module.id }};const ASSESSMENT_DURATION={{ duration }};const ASSESSMENT_COUNT={{ questions|length }};</script><script src="{{ url_for('static', filename='js/python_assessment.js') }}"></script>{% endblock %}

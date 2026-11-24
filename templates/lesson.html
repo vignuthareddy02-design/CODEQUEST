@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}{{ lesson.title }} – CODEQUEST{% endblock %}
+{% block head %}<script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>{% endblock %}
+{% block content %}
+<section class="lesson-page">
+  <a class="back-link" href="{{ url_for('adventure') }}">← Back to adventure map</a>
+  <div class="lesson-header"><div><div class="section-kicker">WORLD {{ '%02d'|format(world.id) }} · {{ world.name }}</div><h1>{{ lesson.title }}</h1><p>{{ world.skill }}</p></div><div class="crystal-badge">✧<small>{{ world.crystal }}</small></div></div>
+  <div class="story-panel"><div class="wizard-avatar">E</div><div><div class="speaker">ELDRIN · THE KINGDOM WIZARD</div><p>{{ lesson.story }}</p></div></div>
+  <div class="lesson-columns">
+    <div class="lesson-content">
+      <section class="lesson-block"><div class="section-kicker">01 · LEARN THE MAGIC</div><h2>{{ lesson.topic }}</h2><p>{{ lesson.theory }}</p></section>
+      <section class="lesson-block"><div class="section-kicker">02 · WATCH THE SPELL</div><p>Read the example, then try changing it.</p><pre class="code-sample"><code>{{ lesson.example }}</code></pre><button class="copy-btn" onclick="copyExample()">Copy example</button></section>
+      <section class="lesson-block task-block"><div class="section-kicker">03 · YOUR MISSION</div><h2>Time to try it yourself</h2><p>{{ lesson.task }}</p></section>
+    </div>
+    <aside class="playground">
+      <div class="playground-top"><span>⌨ PYTHON PLAYGROUND</span><span class="runtime-status" id="runtimeStatus">Loading Python…</span></div>
+      <textarea id="codeInput" spellcheck="false"># Write your Python code here
+print("Hello, Codoria!")</textarea>
+      <div class="editor-actions"><button class="btn btn-small btn-gold" id="runCode">▶ Run code</button><button class="btn btn-small btn-ghost" id="resetCode">Reset</button></div>
+      <div class="output-label">OUTPUT</div><pre id="codeOutput" class="code-output">Your output will appear here.</pre>
+      <div class="playground-tip">Tip: Try the mission above. You can experiment safely in this browser playground.</div>
+    </aside>
+  </div>
+  <section class="quiz-panel" data-world="{{ world.id }}">
+    <div class="section-kicker">04 · TEST YOUR KNOWLEDGE</div><h2>{{ lesson.quiz.question }}</h2>
+    <div class="quiz-options">{% for option in lesson.quiz.options %}<button class="quiz-option" data-index="{{ loop.index0 }}">{{ ['A','B','C','D'][loop.index0] }}. {{ option }}</button>{% endfor %}</div>
+    <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+    <div class="quiz-explanation" id="quizExplanation">{{ lesson.quiz.explain }}</div>
+    <button class="btn btn-gold" id="completeMission" disabled>Complete mission →</button>
+    <p class="complete-message" id="completeMessage"></p>
+  </section>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+const exampleCode = {{ lesson.example|tojson }};
+const correctAnswer = {{ lesson.quiz.answer }};
+const worldId = {{ world.id }};
+</script>
+<script src="{{ url_for('static', filename='js/lesson.js') }}"></script>
+{% endblock %}

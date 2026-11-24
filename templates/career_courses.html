@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}{{ course.name }} – CODEQUEST{% endblock %}
+{% block content %}
+<section class="python-course-page">
+  <a class="back-link" href="{{ url_for('languages') }}">← All learning kingdoms</a>
+  <div class="python-course-hero"><div><div class="section-kicker">CODEQUEST LEARNING PATH</div><h1>{{ course.icon }} {{ course.name }}</h1><p>{{ course.tagline }} Each chapter is organized into focused lessons and practical topics.</p><p><b>{{ course.level }}</b> · {{ course.modules|length }} modules · {{ total_topics }} topics</p></div><div class="course-crystal">{{ course.icon }}<small>YOUR QUEST</small></div></div>
+  <div class="course-progress-card"><div class="progress-label"><span>YOUR COURSE PROGRESS</span><b>{{ percent }}%</b></div><div class="progress-track"><span style="width:{{ percent }}%"></span></div><div class="course-progress-meta"><span>{{ completed }} of {{ total_topics }} topics marked complete</span><span>Progress is saved to your account</span></div></div>
+  <section class="lesson-block career-intro">
+    <div class="section-kicker">FIRST LEARNING SCROLL · MODULE 01</div>
+    <h2>Start here: {{ course.modules[0].title }}</h2>
+    <h3>Introduction</h3><p>{{ course.intro }}</p>
+    <h3>Definition</h3><p>{{ course.definition }}</p>
+    <h3>Why this matters</h3><p>{{ course.why }}</p>
+    <h3>Five practical examples</h3>
+    {% for example in course.examples %}
+      <div class="python-example"><h3>{{ loop.index }}. {{ example[0] }}</h3><pre class="code-sample"><code>{{ example[1] }}</code></pre><p>{{ example[2] }}</p></div>
+    {% endfor %}
+  </section>
+  {% for module in course.modules %}
+  <section class="region-section" id="module-{{ module.id }}"><div class="region-heading"><div><div class="section-kicker">MODULE {{ '%02d'|format(module.id) }}</div><h2>{{ module.title }}</h2><p>{{ module.intro }}</p></div><span class="region-range">{{ module.topics|length }} TOPICS</span></div>
+    <div class="career-topic-list">
+    {% for topic in module.topics %}
+      {% set key = module.id ~ ':' ~ loop.index %}
+      <div class="career-topic"><div><span class="module-number">{{ '%02d'|format(loop.index) }}</span><b>{{ topic }}</b></div><form method="post" action="{{ url_for('career_topic_complete', slug=course.slug, module_id=module.id, topic_no=loop.index) }}"><button class="btn btn-small {{ 'btn-gold' if key in done else 'btn-ghost' }}" type="submit">{{ '✓ Completed' if key in done else 'Mark complete' }}</button></form></div>
+    {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  <p class="course-note">This is the curriculum map and progress foundation. Detailed lesson pages, interactive quizzes, timed exams and project labs will be added in the next content phases; a topic is not treated as taught merely because it appears in this roadmap.</p>
+</section>
+{% endblock %}
